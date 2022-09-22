@@ -59,6 +59,6 @@ example_bin_5.png    output the relative importance of epigenetics marks and pre
 To note, to carry out on R-loop prediction based on single-omics or combinatorial-omics, the only thing you need to do is adjust the input in the multi-bin-histone-predict-R-loop.py.
 
 Citation
-```
+
 If you find that tool useful in your research, please consider citing our paper.
-```
+
