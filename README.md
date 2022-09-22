@@ -47,13 +47,18 @@ multi-omics R-loop prediction model training and evaluation for one specific bin
 	python multi-bin-histone-predict-R-loop.py example_bin.bed  example_bin_result_1.txt > example_bin_result_2.txt
 ```
 To note, example_bin.bed is a matrix file where a row represents one specific bin region of all protein coding TSSs or TTSs, non-coding TSSs or TTSs, and enhancers and column represent omics type, and cell represents the quantification of corresponding omics type in corresponding bins. 
-additionally, it generates five png files:
-	example_bin_1.png    correlation matrix plot for the bin
-	example_bin_2.png    scaled algorithm comparison based on mean squared error
-	example_bin_3.png    scaled algorithm comparison based on root mean squared error
-	example_bin_4.png    gridSearchCV implement for extra trees regressor models
-	example_bin_5.png    output the relative importance of epigenetics marks and predictive R squared
+
+Additionally, it generates five png files:
+```
+example_bin_1.png    correlation matrix plot for the bin
+example_bin_2.png    scaled algorithm comparison based on mean squared error
+example_bin_3.png    scaled algorithm comparison based on root mean squared error
+example_bin_4.png    gridSearchCV implement for extra trees regressor models
+example_bin_5.png    output the relative importance of epigenetics marks and predictive R squared
+```
 To note, to carry out on R-loop prediction based on single-omics or combinatorial-omics, the only thing you need to do is adjust the input in the multi-bin-histone-predict-R-loop.py.
 
 Citation
+```
 If you find that tool useful in your research, please consider citing our paper.
+```
