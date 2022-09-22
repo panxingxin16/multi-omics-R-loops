@@ -27,22 +27,26 @@ xgboost                   1.5.0
 Running environment installation:
 
 1. Download and install Anaconda 3 on your system. Once complete, restart the shell to initialize the conda installation.
+```
 wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 bash Anaconda3-2021.05-Linux-x86_64.sh
+```
 
 2. Most of the packages can be setup through conda directly. To avoid version incompatibilities, it’s best to install most of the packages in their own conda environment.
-
+```
 conda create -n multi-omic python=3
-
+```
 3. Activate the created environment and install the packages available from conda.
+```
 conda activate multi-omic
 conda install -c bioconda matplotlib scikit-learn statsmodels catboost lightgbm xgboost
-
+```
 How to use it?
-
+```
 multi-omics R-loop prediction model training and evaluation for one specific bin:
 	python multi-bin-histone-predict-R-loop.py example_bin.bed  example_bin_result_1.txt > example_bin_result_2.txt
-example_bin.bed is a matrix file where a row represents one specific bin region of all protein coding TSSs or TTSs, non-coding TSSs or TTSs, and enhancers and column represent omics type, and cell represents the quantification of corresponding omics type in corresponding bins. 
+```
+To note, example_bin.bed is a matrix file where a row represents one specific bin region of all protein coding TSSs or TTSs, non-coding TSSs or TTSs, and enhancers and column represent omics type, and cell represents the quantification of corresponding omics type in corresponding bins. 
 additionally, it generates five png files:
 	example_bin_1.png    correlation matrix plot for the bin
 	example_bin_2.png    scaled algorithm comparison based on mean squared error
