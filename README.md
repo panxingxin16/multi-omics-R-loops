@@ -3,6 +3,7 @@ This repository is for the paper "Multi-omics to characterize the functional rel
 
 The python packages required to be used in this script include:
 
+```
 matplotlib                3.2.2                        
 matplotlib-base           3.2.2            
 numpy                     1.21.5           
@@ -18,6 +19,10 @@ statsmodels               0.13.2
 catboost                  0.26.1
 lightgbm                  3.2.1
 xgboost                   1.5.0
+```
+
+
+
 
 Running environment installation:
 
